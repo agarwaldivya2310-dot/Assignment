@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT_3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+            padding: 50px;
+
+        }
+
+        .Q&A {
+            display: flex;
+            width: 900;
+            padding: 20px;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .ques {
+            box-sizing: border-box;
+            justify-content: center;
+            padding: 20px 50px;
+            border: 1px solid blue;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: aliceblue;
+        }
+
+        .form_1 input {
+            padding: 10px 20px 10px 20px ;
+            width: 350px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(255, 215, 221);
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        button {
+            background-color: black;
+            color: aliceblue;
+            padding: 15px;
+            width: 150px;
+            border-radius: 10px;
+            border: none;
+        }
+        button:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            cursor: pointer;
+            translate: 0 .2s ease;
+            font-weight: bold;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="Q&A">
+        <div>
+            <h3>1.Your team is building a college event page with a main heading, introduction, and three sections.
+                Which semantic HTML elements would you choose for the page structure, and why?
+            </h3>
+            <!-- A. The semantic tag to be used are: header, h1, main and section tags to create a clear and accessible page.
+         HEader: tag wraps the top head portion of the post.
+         h1 tag: primarily highlights the main agenda of the post.
+         main tag: comprises of the core content of the post, separating the primary event section from the header and footer.
+         section: defines each of thr three individual thematic parts the the main content area, such as events shedu;e, speaker detials and registration info.
+         h2: carries the subheading for each section to main a logical heading hierarchy.
+
+         These elements provide:
+         1. Easy Accessibility: these hepl user to navigate the hage easily.
+         2. Seo benefits
+         3. Maintainabilityu: easy of developers to read, update and style the source code withput relying too much on id and class attributes.
+
+    -->
+            <!-- example -->
+            <!-- Main heading and intorduction -->
+            <div class="ques">
+                <header>
+                    <h1>Fashionova 2026</h1>
+                    <p>Join us for our most awaited fasion feast, curated, organised, volunteered by our creative fellow
+                        students and also exquisite couture collection our esteemed alumni.</p>
+
+                </header>
+                <!-- main contents and details of the fest -->
+                <main>
+                    <!-- section1: Events schedule -->
+                    <section id="schedule">
+                        <h2>Event schedule</h2>
+                        <p>Explore our timelines and event lists lined up throughout the day, which includes</p>
+                        <li>1. Inaugration ceremony</li>
+                        <li>2. Cultural programmes</li>
+                        <li>3. Speech by Keynote Speaker and our esteemed guests</li>
+                        <li>4. showcase of graduation projects</li>
+                        <li>5. Interaction Session with Panels</li>
+
+                    </section>
+                    <!-- section 2: Registration Info -->
+                    <section id="registration">
+                        <h2>Registration & Tickets</h2>
+                        <p>Secure your spots for our college fest. Free for College students!!1buts seats are limited.
+                            So
+                            HURRY
+                        </p>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+
+
+        <div>
+            <h3>2.You need to display five programming languages where the order does not matter. Which HTML listelement
+                should you use? Write a small example.
+            </h3>
+            <!-- A. In an unordered listelement the order is not defined,It is listed in bullets by default, thus it can used for the above statement.
+     the bullets can be customised and changed using internal and external CSS  -->
+            <!-- for Ex. -->
+            <div class="ques">
+                <h2>Five programming language list:</h2>
+                <ul style="list-style-type: square;">
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Ruby</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div>
+            <h3>3. A student creates a button using a div because it looks like a button after CSS is applied. What HTML
+                element
+                would be more appropriate for the action, and why?</h3>
+            <!-- A: the most appropriate HTML lememt to be used is <button> tag 
+             1.beacuse it clearly delivers its purpose to the browser and the user. 
+             2. clear visibility and space provided by the button tag hepls user to click  on the given area
+             3. functuionality wise button tag intergrated naturally with forms and javascripts making the task less tedious and confusing lateron.   -->
+
+            <div class="ques">
+                <form action="">
+                    <div class="form_1">
+                        <label for="">Username</label>
+                        <input type="text" name="userename" id="Username" placeholder="Enter Your UserID">
+                    </div>
+                    <button>Sign Up</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
