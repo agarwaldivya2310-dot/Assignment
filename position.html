@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position&HTML</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            box-sizing: border-box;
+            padding: 20px;
+            width: 400px;
+            background-color: rgb(231, 228, 228);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 200;
+            margin-left: 10px;
+        }
+
+        .card p {
+            line-height: 1.5;
+            color: rgb(72, 72, 72);
+            font-size: 13px;
+            text-align: left;
+            margin: 0px 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3:hover {
+            color: chocolate;
+        }
+
+        .card p::before {
+            content: "🏎️";
+
+        }
+
+        .card p:hover {
+            content: "🏎️";
+
+            /* make content bigger while hover over p */
+            
+        }
+
+        .emoji {
+            cursor: pointer;
+            display: none;
+            /* hidden by default */
+        }
+
+        p:hover .emoji {
+            display: inline-flex;
+            animation: alternate-reverse;
+            /* shows when paragraph is hovered */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="/assets/car.jpeg" alt="car">
+        <h3>Sports Car</h3>
+        <p>The sleek orange sports car races down the open road, its aerodynamic curves and bold black accents
+            highlighting pure engineering mastery. Against the warm glow of the sunset, the machine embodies speed,
+            precision, and the thrill of modern automotive design. <span class="emoji">➜</span></p>
+
+    </div>
+</body>
+
+</html>

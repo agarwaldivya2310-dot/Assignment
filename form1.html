@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            background: linear-gradient(to top, #2575fc, #ffff);
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login_blue h1 {
+            color: rgb(12, 42, 106);
+            text-decoration: solid bold;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 30px;
+
+        }
+
+        .login_blue {
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0px 4px 12px rgb(90, 105, 134);
+            border-radius: 15px;
+            background: #fff;
+            width: 320px;
+            text-align: center;
+        }
+
+        .auth_group {
+            position: relative;
+            width: 100%;
+            margin-bottom: 15px;
+
+        }
+
+        .auth_group input {
+            width: 100%;
+            padding: 10px 10px 10px 10px;
+            box-sizing: border-box;
+            border: rgb(0, 140, 255) solid 1.5px;
+            border-radius: 10px;
+            font-size: 10px;
+        }
+
+        .icon_img {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 60px 20px 60px;
+            margin-bottom: 15px;
+            
+        }
+
+        .login_btn {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            background: rgb(0, 140, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        }
+
+        .login_btn:hover {
+            background: #0056b3;
+        }
+
+        .icon {
+            position: absolute;
+            right: 12px;
+            width: 10px;
+            height: 10px;
+            top: 25%;
+        }
+
+        .link {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            gap: 50px;
+            color: rgb(36, 57, 101);
+            text-decoration: solid;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            font-size: 12px;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="login_blue">
+        <div class="icon_img">
+            <img src="/task/assests/circle-user-blue.png" alt="username" width="40px" height="40px">
+            <img src="/task/assests/lock-blue.png" alt="lock" width="40px" height="40px">
+        </div>
+        <h1>LOGIN</h1>
+        <form action="">
+
+            <div class="auth_group">
+                <input type="text" id="username" placeholder="USERNAME" required />
+                <span><img src="/task/assests/user (2).png" alt="username" class="icon"></span>
+            </div>
+
+            <div class="auth_group">
+                <input type="password" id="password" placeholder="PASSWORD" required/>
+                <span><img src="/task/assests/lock-blue.png" alt="lock" class="icon"></span>
+            </div>
+
+            <div>
+                <button type="submit" class="login_btn">LOGIN</button>
+            </div>
+
+            <div class="link">
+                <a href="" class="forgot_password_2">Forgot Password?</a>
+                <a href="" class="sign_up">Sign Up</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
